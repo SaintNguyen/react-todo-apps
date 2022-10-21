@@ -1,0 +1,403 @@
+.header{
+  height: 200px;
+  width: 135%;
+  background-color : #E9EEF6;
+  padding-top: 50px;
+}
+
+.card-container{
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 3px 50px #A5A5A5;
+}
+
+.card-wrapper{
+  width: 270px; 
+  height: 200px; 
+  box-shadow: 0px 3px 50px #A5A5A5;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-top{
+  width: 100%;
+  height: 2%;
+}
+
+.task-holder{
+  width: 100%;
+  height: 98%;
+  padding: 10px 10px;
+  display : flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #111;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.card-header{
+  font-family: "Archivo Black", sans-serif; font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*max-width: 80px;*/
+  height: 30px;
+  padding: 1px 1px !important;
+  text-align: center;
+}
+
+.task-container{
+  height: 600px;
+  width: 135%;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(background/2.jpg);
+  background-size: cover;
+  padding : 40px 50px;
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/*--------------------------------------*/
+/* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #CA4246;
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+}
+
+.gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+  
+
+
+/* Style the rest of the page. */
+body {
+  background-color: #fdf1f0;
+}
+
+/*header {
+  margin-top: 1em;
+  margin-top: calc(50vh - 3em);
+}*/
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  width: 605px;
+}
+
+h6{
+  font-family: "Archivo Black", sans-serif;
+}
+h2{
+  font-family: "Archivo Black", sans-serif;
+}
+h7{
+  font-family: "Archivo Black", sans-serif;
+}
+h3{
+  font-family: "Archivo Black", sans-serif;
+}
+h4{
+  font-family: "Archivo Black", sans-serif;
+}
+h4{
+  font-family: "Archivo Black", sans-serif;
+}h5{
+  font-family: "Archivo Black", sans-serif;
+  line-height: 1.0
+}
+/*----------------------*/
+.mt-3{
+  font-family: "Great Vibes", cursive; font-size: 22px;
+}
+/*----------------------------*/
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+.container{
+  display: inline-flex;
+}
+main{
+  width: 100%;
+  /*padding: 20px;*/
+}
+.sidebar{
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  padding-top: 40px;
+  text-align:center;
+  line-height: 50px;
+  
+}
+.link:hover{
+  background:rgb(238, 238, 238);
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  background: rgb(238, 238, 238);
+  color: #000;
+  text-align: center;
+}
+.icon, .link_text{
+  font-size: 20px;
+  margin-top: -30px;
+}
+.wrap-site-logo img {
+  max-height: 100px;
+  width: 500px;
+}
+/*--------------------------*/
+/* ************************ HEADER *********************** */
+.navbar {
+  background-color: #FAFAFA;
+  opacity: 0.9;
+  height: 42px;
+  transition: 0.7s;
+}
+.navbar-nav {
+  width: 80% !important;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header {
+  text-align: center;
+  height: 100vh;
+  width: 190vh;
+  background: url(images/Star_Wars.jpg) no-repeat fixed 50% 50%;
+  background-size:  cover;
+}
+#line {
+  height: 1px;
+  background-color: #b3aca7;
+  width: 25%;
+  margin: 0 auto;
+}
+.presentation {
+  height: 240px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.infos {
+  border: 1px solid #b3aca7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.photo {
+  position: relative;
+}
+.photo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: auto;
+  max-width: 80%;
+  border-radius: 3px;
+  box-shadow: 0 0 4px #111;
+}
+header .button {
+  margin-top: 45px;
+}
+header .button a {
+  padding: 20px 80px;
+  border: 1px solid #b3aca7;
+  width: 300px;
+}
+header .button:hover a {
+  background: #b3aca7;
+  color: #e2dedb;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+/*------AOS-----------*/
+h3 {
+  font-family: 'Audiowide', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 1px #283655;
+  color: #fff;
+}
+h1 {
+  padding: 90px 0 10px 0;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 4.3em;
+  text-transform: uppercase;
+  color: #fff;
+}
+h5{
+  font-family: 'Audiowide', sans-serif;
+  color: #fff;
+}
+h2{
+  font-family: 'Audiowide', sans-serif;
+}
+h6{
+  font-family: 'Audiowide', sans-serif;
+}
+h7{
+  font-family: 'Audiowide', sans-serif;
+}
