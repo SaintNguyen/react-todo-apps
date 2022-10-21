@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-todo-apps/static/css/main.caed167c.chunk.css",
+    "main.js": "/react-todo-apps/static/js/main.7c277739.chunk.js",
+    "main.js.map": "/react-todo-apps/static/js/main.7c277739.chunk.js.map",
+    "runtime-main.js": "/react-todo-apps/static/js/runtime-main.a32282fa.js",
+    "runtime-main.js.map": "/react-todo-apps/static/js/runtime-main.a32282fa.js.map",
+    "static/css/2.f92d54fe.chunk.css": "/react-todo-apps/static/css/2.f92d54fe.chunk.css",
+    "static/js/2.d9ece49a.chunk.js": "/react-todo-apps/static/js/2.d9ece49a.chunk.js",
+    "static/js/2.d9ece49a.chunk.js.map": "/react-todo-apps/static/js/2.d9ece49a.chunk.js.map",
+    "static/js/3.a2d4b48d.chunk.js": "/react-todo-apps/static/js/3.a2d4b48d.chunk.js",
+    "static/js/3.a2d4b48d.chunk.js.map": "/react-todo-apps/static/js/3.a2d4b48d.chunk.js.map",
+    "index.html": "/react-todo-apps/index.html",
+    "static/css/2.f92d54fe.chunk.css.map": "/react-todo-apps/static/css/2.f92d54fe.chunk.css.map",
+    "static/css/main.caed167c.chunk.css.map": "/react-todo-apps/static/css/main.caed167c.chunk.css.map",
+    "static/js/2.d9ece49a.chunk.js.LICENSE.txt": "/react-todo-apps/static/js/2.d9ece49a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-todo-apps/static/media/Star_Wars.225c3567.jpg",
+    "static/media/XuanHuu.6c85c2c4.jpg": "/react-todo-apps/static/media/XuanHuu.6c85c2c4.jpg",
+    "static/media/font-awesome.min.css": "/react-todo-apps/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a32282fa.js",
+    "static/css/2.f92d54fe.chunk.css",
+    "static/js/2.d9ece49a.chunk.js",
+    "static/css/main.caed167c.chunk.css",
+    "static/js/main.7c277739.chunk.js"
+  ]
+}
